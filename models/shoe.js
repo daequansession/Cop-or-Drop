@@ -1,4 +1,3 @@
-const db = require("../db/connnection.js");
 const mongoose = require("mongoose");
 
 const shoeSchema = new mongoose.Schema({
@@ -9,6 +8,7 @@ const shoeSchema = new mongoose.Schema({
   retail_price: Number,
   purchase_link: String,
   description: String,
+  image_url: String,
 });
 
 const Shoe = mongoose.model("Shoe", shoeSchema);

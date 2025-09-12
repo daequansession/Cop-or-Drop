@@ -1,98 +1,14 @@
-const sneakers = [
-  {
-    brand: "Nike",
-    model: "Air jordan 12 Retro",
-    colorway: "Black/Varsity Red-White",
-    release_year: 1997,
-    retail_price: 135,
-    purchase_link:
-      "https://www.goat.com/sneakers/air-jordan-12-retro-flu-game-2025-ct8013-002",
-    description:
-      "The name comes from Michael Jordan's playoff performance in the 1997 NBA Finals while he alledgedly played while having the flu.",
-  },
-  {
-    brand: "Nike",
-    model: "Air jordan 1 High",
-    colorway: "Black/Varsity, Red-White",
-    release_year: 1985,
-    retail_price: 65,
-    purchase_link: "https://www.goat.com/sneakers/air-jordan-1-high-1985-4280",
-    description:
-      "An iconic black and red colorway known as the 'Banned' colorway because the NBA banned Michael Jordan from wearing them due to uniform violations.",
-  },
-  {
-    brand: "Nike",
-    model: "Gamma 12 ",
-    colorway: "Black/Gym Red/Gamma Blue",
-    release_year: 2013,
-    retail_price: 170,
-    purchase_link:
-      "https://www.flightclub.com/air-jordan-12-retro-black-gym-red-gamma-blue-011850?srsltid=AfmBOoo-HQa1Cal5Sh4auFjf2h524C5BCOeFdSaPOfG5l7-1J8U2Ztsz",
-    description: "A sleek  black upper with blue and red accents.",
-  },
-  {
-    brand: "Nike",
-    model: "Red october",
-    colorway: "Red",
-    release_year: 2014,
-    retail_price: 245,
-    purchase_link:
-      "https://www.goat.com/sneakers/air-yeezy-2-red-october-555088-600",
-    description:
-      "The Red October is a part of the Air Yeezy line designed by Kanye West in collaboration with Nike.",
-  },
-  {
-    brand: "Nike",
-    model: "",
-    colorway: "",
-    release_year: 10,
-    retail_price: 10,
-    purchase_link: "",
-    description: ".",
-  },
-  {
-    brand: "Nike",
-    model: "",
-    colorway: "",
-    release_year: 10,
-    retail_price: 10,
-    purchase_link: "",
-    description: "",
-  },
-  {
-    brand: "Nike",
-    model: "",
-    colorway: "",
-    release_year: 10,
-    retail_price: 10,
-    purchase_link: "",
-    description: ".",
-  },
-  {
-    brand: "Nike",
-    model: "",
-    colorway: "",
-    release_year: 10,
-    retail_price: 10,
-    purchase_link: "",
-    description: ".",
-  },
-  {
-    brand: "Nike",
-    model: "",
-    colorway: "",
-    release_year: 10,
-    retail_price: 10,
-    purchase_link: ".",
-    description: ".",
-  },
-  {
-    brand: "Nike",
-    model: "",
-    colorway: "",
-    release_year: 10,
-    retail_price: 10,
-    purchase_link: "",
-    description: ".",
-  },
-];
+const db = require("../db/connection.js");
+const Shoe = require("../models/shoe.js");
+const sneakers = require("./sneakers.js");
+
+const insertData = async () => {
+  db.dropCollection("shoes");
+
+  await Shoe.create(sneakers);
+  console.log("Shoes created!");
+
+  db.close();
+};
+
+insertData();

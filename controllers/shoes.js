@@ -13,7 +13,6 @@ router.get("/grails", async (req, res) => {
   const currentUser = await User.findById(req.session.user._id)
     .select("_id username shoes")
     .populate("shoes");
-  console.log("Current User: ", currentUser);
   res.render("shoes/grails.ejs", { shoes: currentUser.shoes });
 });
 
@@ -26,6 +25,14 @@ router.put("/:shoeId", async (req, res) => {
   const currentUser = await User.findById(req.session.user._id); // Step 1: Find the user so that we can access the "shoes" field
   currentUser.shoes.push(req.params.shoeId); // Step 2: Add shoe id to the user's shoes' array
   await currentUser.save(); // Step 3: Save the updated user document to the Database
+  res.redirect("/shoes/grails");
+});
+
+router.delete("/:shoeId", async (req, res) => {
+  await User.findByIdAndUpdate(req.session.user._id, {
+    $pull: { shoes: req.params.shoeId },
+  });
+
   res.redirect("/shoes/grails");
 });
 

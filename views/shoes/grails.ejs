@@ -18,6 +18,10 @@
           <img src="<%= shoe.image_url %>" />
           <p><%= shoe.model %></p>
         </a>
+
+        <form action="/shoes/<%= shoe._id %>?_method=DELETE" method="POST">
+          <button type="submit">Delete</button>
+        </form>
       </div>
       <% }) %>
     </main>

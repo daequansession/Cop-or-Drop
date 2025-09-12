@@ -59,6 +59,7 @@ router.post("/sign-in", async (req, res) => {
       req.body.password,
       userInDatabase.password
     );
+
     if (!validPassword) {
       return res.send("Login failed. Please try again.");
     }
@@ -71,7 +72,9 @@ router.post("/sign-in", async (req, res) => {
       _id: userInDatabase._id,
     };
 
-    res.redirect("/");
+    req.session.save(() => {
+      res.redirect("/");
+    });
   } catch (error) {
     console.log(error);
     res.redirect("/");

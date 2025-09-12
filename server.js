@@ -11,6 +11,7 @@ const session = require("express-session");
 const methodOverride = require("method-override");
 const passUserToView = require("./middleware/pass-user-to-view.js");
 const isSignedIn = require("./middleware/is-signed-in.js");
+const MongoStore = require("connect-mongo");
 
 const authController = require("./controllers/auth.js");
 const shoeController = require("./controllers/shoes.js");
@@ -28,6 +29,9 @@ app.use(
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
+    store: MongoStore.create({
+      mongoUrl: process.env.MONGODB_URI,
+    }),
   })
 );
 

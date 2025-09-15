@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cop or Not</title>
+    <title>Cop or Drop</title>
     <link rel="stylesheet" href="/stylesheets/styles.css" />
   </head>
   <body>
     <%- include("./partials/_navbar.ejs") %> <% if (user) { %>
-    <h1>Welcome to the app, <%= user.username %>!</h1>
+    <h1>Welcome to the Cop or Drop app <%= user.username %>!</h1>
     <% } else { %>
-    <h1>Welcome to the app, guest.</h1>
+    <h1>Welcome to the cop or drop app.</h1>
     <% } %>
+    <img src="/stylesheets/images/Cop-or-Drop Logo.jpeg" />
   </body>
 </html>

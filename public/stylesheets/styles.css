@@ -1,3 +1,28 @@
 img {
-  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 650px;
+  align-content: center;
+}
+
+body {
+  background-color: rgb(27, 73, 89);
+}
+
+h1 {
+  color: blueviolet;
+  text-align: center;
+}
+
+#username {
+  color: blueviolet;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: flex-start;
 }

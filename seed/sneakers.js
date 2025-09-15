@@ -86,7 +86,7 @@ const sneakers = [
   },
   {
     brand: "New Balance",
-    model: "550",
+    model: "550 Low Top",
     colorway: "White / Navy / Red",
     release_year: 1989,
     image_url:
@@ -133,7 +133,6 @@ const sneakers = [
     purchase_link: "https://www.nike.com/launch/t/nike-air-max-95-qs-ygo-joey",
     description:
       "Part of the Yu-Gi-Oh!  Nike collaboration. The 'Joey' colorway is globally released Sept 12, 2025. Inspired by the anime's 'Air Muscle' sneaker.",
-    //stop here
   },
   {
     brand: "Nike",

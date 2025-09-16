@@ -31,6 +31,7 @@ const sneakers = [
     release_year: 2013,
     image_url:
       "https://cdn.shopify.com/s/files/1/0603/3031/1875/products/3_c60861f3-2dfb-4fa9-9669-dd42d26e241d.jpg?v=1696328820",
+    retail_price: 170,
     purchase_link:
       "https://www.flightclub.com/air-jordan-12-retro-black-gym-red-gamma-blue-011850?srsltid=AfmBOoo-HQa1Cal5Sh4auFjf2h524C5BCOeFdSaPOfG5l7-1J8U2Ztsz",
     description: "A sleek black upper with blue and red accents.",

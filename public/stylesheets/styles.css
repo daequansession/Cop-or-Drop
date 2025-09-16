@@ -11,12 +11,15 @@ body {
 }
 
 h1 {
-  color: blueviolet;
+  color: aquamarine;
   text-align: center;
 }
+p {
+  color: aquamarine;
+}
 
-#username {
-  color: blueviolet;
+a {
+  color: aquamarine;
 }
 
 nav {
@@ -25,4 +28,8 @@ nav {
   align-content: stretch;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.button {
+  color: aquamarine;
 }

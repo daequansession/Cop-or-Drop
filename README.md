@@ -2,11 +2,11 @@
 
 # Cop or Drop
 
-**Cop or Drop** is a sneaker collector's app designed to help enthusiasts keep track of their shoe collections. Users can log their sneakers, categorize them as a "Cop" (a must-have) or a "Drop" (a pass), and manage their inventory. The app provides a streamlined way for sneakerheads to organize their collection and wishlists in one central place.
+**Cop or Drop** - a sneaker collector's app designed to help sneakerheads keep track of their shoe collections. Users can log their sneakers, categorize them and manage their inventory. The app provides a way for sneakerheads to organize their collection in one place.
 
 ---
 
-## Deployed App
+# Deployed App
 
 You can view the live deployment here:
 
@@ -14,18 +14,16 @@ You can view the live deployment here:
 
 ---
 
-## Technologies Used
+# Technologies Used
 
-- **JavaScript:** The core programming language for the app's functionality.
-- **EJS (Embedded JavaScript):** Used as the templating language to generate dynamic HTML content.
-- **CSS:** For styling and visual presentation.
-- **MongoDB:** The NoSQL database used to store and manage sneaker data.
+- **JavaScript:**
+- **EJS (Embedded JavaScript):**
+- **CSS:**
+- **MongoDB:**
 
----
+# Attributions
 
-## Attributions
-
-This project was built with the help of the following external resources:
+This project was built with the help of these resources:
 
 - **MDN Web Docs:** For documentation on the `CSSStyleSheet` API.
 - **freeCodeCamp:** A tutorial on CSS button styles, hover effects, and background colors.

@@ -28,6 +28,7 @@ This project was built with the help of these resources:
 - **MDN Web Docs:** For documentation on the `CSSStyleSheet` API.
 - **freeCodeCamp:** A tutorial on CSS button styles, hover effects, and background colors.
 - **W3Schools:** A reference for general CSS syntax and properties.
+- **https://trello.com/b/mx9nU7u5/my-trello-board**
 
 ---
 

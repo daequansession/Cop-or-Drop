@@ -1,4 +1,4 @@
-![Cop-or-Drop Logo]("/stylesheets/images/Cop-or-Drop Logo.jpeg")
+<img width="1440" height="1440" alt="image" src="https://github.com/user-attachments/assets/eb4ce160-656d-4321-832e-3eaf8e6ab929" />
 
 # Cop or Drop
 
